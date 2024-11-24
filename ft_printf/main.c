@@ -39,7 +39,7 @@ void display_test_result(const char *test_desc, int ret_ft, int ret_printf)
 
 int main(void)
 {
-    int ret_ft, ret_printf;
+    /*int ret_ft, ret_printf;
 
     printf(BLUE UNDERLINE "\nStarting ft_printf tests:\n" RESET);
     printf("------------------------------------------------------------\n");
@@ -111,6 +111,6 @@ int main(void)
     ret_printf = printf("Large unsigned: %u\n", 4294967);
     display_test_result("Large unsigned integer", ret_ft, ret_printf);
 
-    printf(BLUE UNDERLINE "All tests completed!\n" RESET);
+    printf(BLUE UNDERLINE "All tests completed!\n" RESET); */
 	return 0;
 }
