@@ -68,10 +68,16 @@ int main(void)
     ret_printf = printf("Unsigned: %u\n", 123456789);
     display_test_result("Unsigned integer", ret_ft, ret_printf);
 
-    // 5. Test hexadecimal
+    // 5. Test hexadecimal lower
     printf(BOLD MAGENTA "Running test: Hexadecimal\n" RESET);
     ret_ft = ft_printf("Hexadecimal: %x\n", 255);
     ret_printf = printf("Hexadecimal: %x\n", 255);
+    display_test_result("Hexadecimal", ret_ft, ret_printf);
+
+    // 5. Test hexadecimal upper
+    printf(BOLD MAGENTA "Running test: Hexadecimal\n" RESET);
+    ret_ft = ft_printf("Hexadecimal: %X\n", 255);
+    ret_printf = printf("Hexadecimal: %X\n", 255);
     display_test_result("Hexadecimal", ret_ft, ret_printf);
 
     // 6. Test percent sign
@@ -104,15 +110,6 @@ int main(void)
     ret_ft = ft_printf("Large unsigned: %u\n", 4294967);
     ret_printf = printf("Large unsigned: %u\n", 4294967);
     display_test_result("Large unsigned integer", ret_ft, ret_printf);
-
-	int a = 10, b = 20;
-	ft_printf("ft_printf : Pointer a: %p\n", &a);
-	printf("printf : Pointer a: %p\n", &a);
-	ft_printf("ft_printf : Pointer b: %p\n", &b);
-	printf("printf : Pointer b: %p\n", &b);
-
-	ft_printf("ft_printf : Null pointer: %p\n", NULL);
-	printf("printf : Null pointer: %p\n", NULL);
 
     printf(BLUE UNDERLINE "All tests completed!\n" RESET);
 	return 0;
