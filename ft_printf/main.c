@@ -114,9 +114,9 @@ int main(void)
     //11. Test All flags together
     printf(BOLD MAGENTA "Running test: All flags together\n" RESET);
     ret_ft = ft_printf("int: %i, decinmal: %d, unsigned int: %u, string: %s,\n char: %c, pointer: %p, heXa: %X, hexa: %x, percent: %%",
-	    -42, 2435678, 255, "mbah", "A", NULL, 255, 255);
+	    -42, 2435678, 255, "mbah",  'A', NULL, 255, 255);
     ret_printf = printf("int: %i, decinmal: %d, unsigned int: %u, string: %s,\n char: %c, pointer: %p, heXa: %X, hexa: %x, percent: %%",
-	    -42, 2435678, 255, "mbah", "A", NULL, 255, 255);
+	    -42, 2435678, 255, "mbah", 'A', NULL, 255, 255);
     display_test_result("All flags together", ret_ft, ret_printf);
 	
     //12. Test case where format is NULL
